@@ -35,19 +35,16 @@ const Thead = styled.thead`
   border-bottom: 2px solid #5d2e7a;
 
   th {
-    width: 166px;
+    width: 100px;
     height: 51px;
     text-align: left;
     padding-left: 20px;
-    /* height: 48px; */
-    @media (min-width: 1260px) {
-      height: 51px;
-      width: 215px;
+    @media (min-width: 500px) {
+      width: 150px;
     }
-    :last-child {
-      @media (min-width: 1260px) {
-        transform: translateX(60px);
-      }
+    @media (min-width: 1200px) {
+      height: 51px;
+      width: 275px;
     }
   }
 `;

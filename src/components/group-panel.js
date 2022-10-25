@@ -19,7 +19,7 @@ export const GroupPanelWrapper = styled.div`
   }
 `;
 
-export const GroupBtn = styled.div`
+export const GroupBtn = styled.button`
   position: relative;
   background: #5d2e7a;
   color: #d8c3e4;
@@ -29,7 +29,6 @@ export const GroupBtn = styled.div`
   height: 51px;
   display: inline-block;
   text-align: center;
-  padding-top: 12px;
   :hover {
     cursor: pointer;
     color: #f2e9f7;

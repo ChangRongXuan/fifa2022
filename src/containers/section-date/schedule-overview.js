@@ -26,16 +26,16 @@ const Thead = styled.thead`
   th {
     width: 120px;
     height: 51px;
-    /* height: 48px; */
+    text-align: left;
+    :first-child {
+      padding-left: 20px;
+    }
+    @media (min-width: 500px) {
+      width: 250px;
+    }
     @media (min-width: 1200px) {
       height: 51px;
-      width: 150px;
-      margin-left: 20px;
-    }
-    :last-child {
-      @media (min-width: 1200px) {
-        transform: translateX(60px);
-      }
+      width: 275px;
     }
   }
 `;
@@ -140,7 +140,11 @@ const ScheduleOverview = () => {
           return (
             <tr key={match.key}>
               <td className='time'>{match.dateTime}</td>
-              <td className='group'>{match.group}組</td>
+              <td className='group'>
+                {' '}
+                {match.group}
+                {match.group && '組'}
+              </td>
               <td className='team'>
                 <span>{match.team1}</span>
                 <span className='dot'>・</span>
